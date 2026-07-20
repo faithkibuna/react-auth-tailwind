@@ -1,12 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
-import Dashbord from "./assets/componet/dashboard";
 import "./App.css";
 
+import Dashboard from "./assets/components/Dashboard";
+import Login from "./assets/components/Login";
+import Register from "./assets/components/Register";
+import Index from "./assets/components/Index";
+
 function App() {
-  return <Dashbord />;
+  return (
+    <>
+      <Dashboard />
+      <Login />
+      <Register />
+      <Index />
+    </>
+  );
 }
 
 export default App;

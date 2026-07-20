@@ -1,4 +1,4 @@
-function login() {
+function Login() {
   return (
     <body classname="min-h-screen bg-slate-950 px-4 py-10 text-slate-100">
       <div classname="mx-auto flex max-w-6xl flex-col items-center justify-center rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-cyan-950/30 lg:flex-row lg:gap-10 lg:p-12">
@@ -75,4 +75,4 @@ function login() {
     </body>
   );
 }
-export default login;
+export default Login;
