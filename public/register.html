@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body classname="bg-slate-950 px-4 py-10 text-slate-100">
+    <div
+      classname="mx-auto max-w-5xl rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-cyan-950/30 lg:p-12"
+    >
+      <div classname="mb-8 text-center lg:text-left">
+        <p classname="text-sm uppercase tracking-[0.35em] text-cyan-400">
+          Create account
+        </p>
+        <h1 classname="mt-2 text-3xl font-semibold sm:text-4xl">
+          Start your secure journey
+        </h1>
+        <p classname="mt-3 text-slate-300">
+          Join the platform by filling out the details below.
+        </p>
+      </div>
+
+      <p id="errorMessage" classname="text-red-500"></p>
+      <form id="registrationForm" classname="grid gap-4 md:grid-cols-2">
+        <div>
+          <label
+            for="firstName"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >First Name</label
+          >
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div>
+          <label
+            for="lastName"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Last Name</label
+          >
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div>
+          <label
+            for="username"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Username</label
+          >
+          <input
+            id="username"
+            name="username"
+            type="text"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div>
+          <label
+            for="email"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Email</label
+          >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div>
+          <label
+            for="phone"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Phone</label
+          >
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div>
+          <lable htmlfor="dob" classname="mb-2 block text-sm font-medium text-slate-200"
+            >Date of Birth</label
+          >
+          <input
+            id="dob"
+            name="dob"
+            type="date"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div>
+          <label
+            for="gender"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Gender</label
+          >
+          <select
+            id="gender"
+            name="gender"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          >
+            <option value="">Select gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </div>
+        <div>
+          <label
+            for="password"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Password</label
+          >
+          <input
+            id="password"
+            name="password"
+            type="password"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+        <div classname="md:col-span-2">
+          <label
+            for="confirmPassword"
+            classname="mb-2 block text-sm font-medium text-slate-200"
+            >Confirm Password</label
+          >
+          <input
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            required
+            classname="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-400"
+          />
+        </div>
+
+        <div
+          classname="md:col-span-2 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <button
+            type="submit"
+            classname="rounded-full bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+          >cdcd
+            Create account
+          </button>
+          <p classname="text-sm text-slate-400">
+            Already a member?
+            <a
+              href="login.html"
+              classname="font-medium text-cyan-400 hover:text-cyan-300"
+              >Login here</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/register.js"></script>
+  </body>
+</html>
