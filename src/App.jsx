@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
-import dashbord from "./assets/componet/dashboard.jsx";
+import Dashbord from "./assets/componet/dashboard";
 import "./App.css";
 
 function App() {
