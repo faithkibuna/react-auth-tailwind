@@ -1,9 +1,9 @@
 import "./App.css";
-
-import Dashboard from "./assets/components/Dashboard";
-import Login from "./assets/components/Login";
-import Register from "./assets/components/Register";
-import Index from "./assets/components/Index";
+import { Link } from "react-router-dom";
+import Dashboard from "./assets/componet/Dashboard";
+import Login from "./assets/componet/Login";
+import Register from "./assets/componet/register";
+import Index from "./assets/componet/index";
 
 function App() {
   return (

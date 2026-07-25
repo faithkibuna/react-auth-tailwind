@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import Login from "../assets/componet/login";
-function login() {
+import Index from "../componet/index";
+function Index() {
   return (
     <>
-      <login />
+      <Index />
       <Link to="/register">Register</Link>
       <br />
       <Link to="/dashboard">Dashboard</Link>
     </>
   );
 }
-export default Login;
+export default index;

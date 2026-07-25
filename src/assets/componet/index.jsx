@@ -1,70 +1,71 @@
+import React, { useState, useEffect } from "react";
 function Index() {
   return (
-    <body classname="min-h-screen bg-slate-950 text-slate-100">
-      <main classname="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 lg:px-8">
-        <header classname="flex items-center justify-between rounded-full border border-slate-800 bg-slate-900/70 px-6 py-4 backdrop-blur">
-          <a href="index.html" classname="text-lg font-semibold tracking-wide">
+    <body className="min-h-screen bg-slate-950 text-slate-100">
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 lg:px-8">
+        <header className="flex items-center justify-between rounded-full border border-slate-800 bg-slate-900/70 px-6 py-4 backdrop-blur">
+          <a href="index.html" className="text-lg font-semibold tracking-wide">
             SecureAuth
           </a>
           <nav
             id="indexNav"
-            classname="flex gap-6 text-sm text-slate-300 items-center"
+            className="flex gap-6 text-sm text-slate-300 items-center"
           >
-            <a href="login.html" classname="transition hover:text-white">
+            <a href="login.html" className="transition hover:text-white">
               Login
             </a>
             <a
               href="register.html"
-              classname="rounded-full bg-cyan-500 px-4 py-2 font-medium text-slate-950 transition hover:bg-cyan-400"
+              className="rounded-full bg-cyan-500 px-4 py-2 font-medium text-slate-950 transition hover:bg-cyan-400"
             >
               Register
             </a>
           </nav>
         </header>
 
-        <section classname="grid flex-1 items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
-          <div classname="space-y-6">
-            <span classname="inline-flex rounded-full border border-cyan-400/40 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-300">
+        <section className="grid flex-1 items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+          <div className="space-y-6">
+            <span className="inline-flex rounded-full border border-cyan-400/40 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-300">
               Modern authentication, made simple
             </span>
-            <h1 classname="text-4xl font-semibold leading-tight sm:text-5xl">
+            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
               Build trust with a polished auth experience.
             </h1>
-            <p classname="max-w-xl text-lg text-slate-300">
+            <p className="max-w-xl text-lg text-slate-300">
               Create an account, sign in securely, and manage users from one
               elegant dashboard.
             </p>
-            <div classname="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4">
               <a
                 href="register.html"
-                classname="rounded-full bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+                className="rounded-full bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
               >
                 Create account
               </a>
               <a
                 href="login.html"
-                classname="rounded-full border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-white"
+                className="rounded-full border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-white"
               >
                 Login
               </a>
             </div>
           </div>
 
-          <div classname="rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-cyan-950/30">
-            <h2 classname="text-xl font-semibold">Why teams love it</h2>
-            <div classname="mt-6 space-y-4 text-sm text-slate-300">
-              <div classname="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-                <p classname="font-semibold text-white">Fast onboarding</p>
-                <p classname="mt-2">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-cyan-950/30">
+            <h2 className="text-xl font-semibold">Why teams love it</h2>
+            <div className="mt-6 space-y-4 text-sm text-slate-300">
+              <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+                <p className="font-semibold text-white">Fast onboarding</p>
+                <p className="mt-2">
                   Collect account details with a streamlined form and clear
                   validation.
                 </p>
               </div>
-              <div classname="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-                <p classname="font-semibold text-white">
+              <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+                <p className="font-semibold text-white">
                   Insightful admin view
                 </p>
-                <p classname="mt-2">
+                <p className="mt-2">
                   Monitor signups and track user activity from a polished
                   dashboard.
                 </p>
