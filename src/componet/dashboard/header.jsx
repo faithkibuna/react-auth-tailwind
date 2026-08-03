@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-function dashboardheader() {
+function header() {
   return (
     <header className="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-900/80 px-6 py-4 shadow-lg shadow-cyan-950/20">
       <div>
@@ -17,4 +17,4 @@ function dashboardheader() {
     </header>
   );
 }
-export default dashboardheader;
+export default header;

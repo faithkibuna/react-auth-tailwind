@@ -1,19 +1,7 @@
-import "./App.css";
-import { Link } from "react-router-dom";
-import Dashboard from "./assets/componet/Dashboard";
-import Login from "./assets/componet/Login";
-import Register from "./assets/componet/register";
-import Index from "./assets/componet/index";
+import Landing from "./pages/landing";
 
 function App() {
-  return (
-    <>
-      <Dashboard />
-      <Login />
-      <Register />
-      <Index />
-    </>
-  );
+  return <Landing />;
 }
 
 export default App;

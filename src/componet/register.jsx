@@ -1,12 +1,5 @@
 import { Link } from "react-router-dom";
-
-
-
-
-
-
-import register from "../pages/register";
-function Login() {
+function register() {
   return (
     <body className="bg-slate-950 px-4 py-10 text-slate-100">
       <div className="mx-auto max-w-5xl rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-cyan-950/30 lg:p-12">
@@ -172,12 +165,12 @@ function Login() {
             </button>
             <p className="text-sm text-slate-400">
               Already a member?
-              <a
-                href="login.html"
+              <Link
+                to="login.html"
                 className="font-medium text-cyan-400 hover:text-cyan-300"
               >
                 Login here
-              </a>
+              </Link>
             </p>
           </div>
         </form>

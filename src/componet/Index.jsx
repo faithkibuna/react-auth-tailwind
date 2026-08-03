@@ -1,25 +1,27 @@
+import { Link } from "react-router";
+
 import React, { useState, useEffect } from "react";
 function Index() {
   return (
     <body className="min-h-screen bg-slate-950 text-slate-100">
       <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 lg:px-8">
         <header className="flex items-center justify-between rounded-full border border-slate-800 bg-slate-900/70 px-6 py-4 backdrop-blur">
-          <a href="index.html" className="text-lg font-semibold tracking-wide">
+          <Link to="index." className="text-lg font-semibold tracking-wide">
             SecureAuth
-          </a>
+          </Link>
           <nav
             id="indexNav"
             className="flex gap-6 text-sm text-slate-300 items-center"
           >
-            <a href="login.html" className="transition hover:text-white">
+            <Link to="login." className="transition hover:text-white">
               Login
-            </a>
-            <a
-              href="register.html"
+            </Link>
+            <Link
+              to="register"
               className="rounded-full bg-cyan-500 px-4 py-2 font-medium text-slate-950 transition hover:bg-cyan-400"
             >
               Register
-            </a>
+            </Link>
           </nav>
         </header>
 
@@ -36,18 +38,18 @@ function Index() {
               elegant dashboard.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="register.html"
+              <Link
+                to="register"
                 className="rounded-full bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
               >
                 Create account
-              </a>
-              <a
-                href="login.html"
+              </Link>
+              <Link
+                to="login"
                 className="rounded-full border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-white"
               >
                 Login
-              </a>
+              </Link>
             </div>
           </div>
 

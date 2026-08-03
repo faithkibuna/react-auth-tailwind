@@ -1,4 +1,4 @@
-function dashboardtable() {
+function table() {
   return (
     <table className="min-w-full divide-y divide-slate-800 text-sm">
       <thead className="bg-slate-950/70 text-left text-slate-300">
@@ -24,4 +24,4 @@ function dashboardtable() {
     </table>
   );
 }
-export default dashboardtable;
+export default table;
